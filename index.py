@@ -12,10 +12,10 @@ def rescaleFrame(frame, scale = 1.5):
   return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 
-img = cv.imread('./photos/forest.jpg')
-cv.imshow('my photo bitch', img)
+img = cv.imread('./photos/photo.jpeg')
+cv.imshow('my photo', img)
 image_resized = rescaleFrame(img)
-cv.imshow('my photo resized motherfucka', image_resized)
+cv.imshow('my photo resized', image_resized)
 
 # Calculing the histogram
 
