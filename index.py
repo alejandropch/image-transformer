@@ -23,7 +23,7 @@ plt.figure()
 plt.title('Histograma')
 plt.xlabel('Rango de pixeles (r)')
 plt.ylabel('N° de pixeles')
-colors = ('b', 'g', 'r')
+colors = ('r', 'g', 'b')
 for i, col in enumerate(colors):
   histogram = cv.calcHist([img],[i], None, [256],[0,256])
   plt.plot(histogram, color = col)
